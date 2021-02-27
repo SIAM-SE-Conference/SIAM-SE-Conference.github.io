@@ -1,0 +1,11 @@
+.campus_slides {
+    display: none;
+}
+
+div.toggle-none {
+    display: none;
+}
+
+div.toggle-block {
+    display: block;
+}

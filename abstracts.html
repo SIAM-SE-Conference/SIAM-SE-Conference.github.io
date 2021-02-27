@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+    <meta charset="UTF-8">
+    <title>SIAM STUDENT CONFERENCE</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+    <link rel="stylesheet" href="https://www.w3schools.com/lib/w3-colors-2020.css">
+    <!-- <link rel="stylesheet" src="./stylesheet.css"> -->
+    <link rel="stylesheet" href="stylesheet.css">
+    <script src="//ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js"></script>
+
+    <script type="text/javascript" src="header.js"></script>
+
+    <!-- navigation -->
+    <div class="w3-bar w3-2020-navy-blazer">
+        <a href="./index.html" class="w3-bar-item w3-button w3-mobile w3-border-right" style="width: 12.5%">Home Page</a>
+        <a href="./schedule.html" class="w3-bar-item w3-button w3-mobile w3-border-right" style="width: 12.5%">Schedule</a>
+        <a href="./abstracts.html" class="w3-bar-item w3-button w3-indigo w3-mobile w3-border-right" style="width: 12.5%">Abstracts</a>
+        <a href="participants.html" class="w3-bar-item w3-button w3-mobile w3-border-right" style="width: 12.5%">Participants</a>
+        <a href="registration.html" class="w3-bar-item w3-button w3-mobile w3-border-right" style="width: 12.5%">Registration</a>
+        <a href="login.html" class="w3-bar-item w3-button w3-mobile w3-border-right" style="width: 12.5%">Sign in</a>
+        <a href="./gallery.html" class="w3-bar-item w3-button w3-mobile w3-border-right" style="width: 12.5%">Gallery</a>
+        <a href="./contactus.html" class="w3-bar-item w3-button w3-mobile" style="width: 12.5%">Contact Us</a>
+    </div>
+
+    <body>
+        <br>
+
+        <div class="w3-container">
+            <h2>Abstracts</h2>
+            <ul id ="abstracts_list" class="w3-ul w3-hoverable">
+                <li>TBA</li>
+            </ul>
+        </div>
+
+        <br>
+        <br>
+
+        <script type="text/javascript" src="footer.js"></script>
+        <script src="./abstracts.js"></script>
+
+        <!-- // This is used to solve the anchor reference bugs for chrome -->
+        <script>
+         $(document).ready(function () {
+             var isChrome = /Chrome/.test(navigator.userAgent) && /Google Inc/.test(navigator.vendor);
+             if (window.location.hash && isChrome) {
+                 setTimeout(function () {
+                     var hash = window.location.hash;
+                     window.location.hash = "";
+                     window.location.hash = hash;
+                 }, 300);
+             }
+         });
+        </script>
+    </body>
+</html>
+
+

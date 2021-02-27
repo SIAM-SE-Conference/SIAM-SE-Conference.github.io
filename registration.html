@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+    <meta charset="UTF-8">
+    <title>SIAM STUDENT CONFERENCE</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+    <link rel="stylesheet" href="https://www.w3schools.com/lib/w3-colors-2020.css">
+    <!-- <link rel="stylesheet" src="./stylesheet.css"> -->
+    <link rel="stylesheet" href="stylesheet.css">
+    <script type="text/javascript" src="header.js"></script>
+
+    <!-- navigation -->
+    <div class="w3-bar w3-2020-navy-blazer">
+        <a href="./index.html" class="w3-bar-item w3-button w3-mobile w3-border-right" style="width: 12.5%">Home Page</a>
+        <a href="./schedule.html" class="w3-bar-item w3-button w3-mobile w3-border-right" style="width: 12.5%">Schedule</a>
+        <a href="./abstracts.html" class="w3-bar-item w3-button w3-mobile w3-border-right" style="width: 12.5%">Abstracts</a>
+        <a href="participants.html" class="w3-bar-item w3-button w3-mobile w3-border-right" style="width: 12.5%">Participants</a>
+        <a href="registration.html" class="w3-bar-item w3-button w3-indigo w3-mobile w3-border-right" style="width: 12.5%">Registration</a>
+        <a href="login.html" class="w3-bar-item w3-button w3-mobile w3-border-right" style="width: 12.5%">Sign in</a>
+        <a href="./gallery.html" class="w3-bar-item w3-button w3-mobile w3-border-right" style="width: 12.5%">Gallery</a>
+        <a href="./contactus.html" class="w3-bar-item w3-button w3-mobile" style="width: 12.5%">Contact Us</a>
+    </div>
+
+    <body>
+        <br>
+
+        <div class="w3-container w3-pale-grey">
+            <h2>Registration</h2>
+        </div>
+
+        <br>
+
+        <div class="w3-container w3-card-4">
+            <br>
+            <form class="w3-container w3-border w3-card-4">
+                <label>First Name</label>
+                <p><input id="firstName" class="w3-input w3-hover-light-grey"></p>
+                <label>Last Name</label>
+                <p><input id="lastName" class="w3-input w3-hover-light-grey"></p>
+                <label>Email</label>
+                <p><input id="email" class="w3-input w3-hover-light-grey"></p>
+                <label>University</label>
+                <p><input id="university" class="w3-input w3-hover-light-grey" placeholder="Georgia Tech/Clemson University/University of Alabama at Birmingham"></p>
+                <!-- <button id="isSpeaker" class="w3-button w3-ripple w3-light-grey">I would like to be a speaker!</button> -->
+                <div id="title_abstract" class="toggle-block">
+                    <a id="isSpeakerF" class="w3-button w3-ripple w3-teal w3-round">Click here if you <b>ARE NOT</b> planning to be a speaker! ^_^</a>
+                    <br><br>
+                    <label>Title of the presentation.</label>
+                    <p><input id="title" class="w3-input w3-hover-light-grey"></p>
+                    <label>Abstract of the presentation.</label>
+                    <p><textarea id="abstract" rows="4" cols="50"></textarea></p>
+                </div>
+                <div id="blank" class="toggle-none">
+                    <a id="isSpeakerT" class="w3-button w3-ripple w3-teal w3-round">Click here if you <b>ARE</b> planning to be a speaker! ^_^</a>
+                </div>
+                <br>
+                <label>Additional Notes.</label>
+                <p><textarea id="notes" rows="4" cols="50"></textarea></p>
+
+                <br><br>
+
+                <button id="registerBtn" class="w3-btn w3-ripple w3-blue">Register</button>
+                <br>
+                <br>
+            </form>
+            <br>
+
+        </div>
+
+        <br>
+
+        <script type="text/javascript" src="footer.js"></script>
+        <script src="./registration.js"></script>
+    </body>
+</html>

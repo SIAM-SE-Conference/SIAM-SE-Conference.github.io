@@ -1,0 +1,13 @@
+document.writeln("        <footer class=\'w3-container w3-pale-yellow\'>");
+document.writeln("            <div class=\'w3-cell-row\'>");
+document.writeln("                <div class = \'w3-container w3-cell\'>");
+document.writeln("                    <img src=\'./image/SIAM.png\' alt=\'SIAM\' style=\'width:: 30px;%\'>");
+document.writeln("                    <p>Sponsored by SIAM</p>");
+document.writeln("                </div>");
+document.writeln("                <div class = \'w3-container w3-cell\'>");
+document.writeln("                    <p> Tanta molis erat Romanam condere gentem </p>");
+document.writeln("                    <p> 千里之行，始于足下 </p>");
+document.writeln("                </div>");
+document.writeln("            </div>");
+document.writeln("        </footer>");
+document.writeln("");
